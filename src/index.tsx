@@ -6,7 +6,7 @@ import App from "./App";
 class BudgetApp extends HTMLElement {
   connectedCallback() {
     const mountPoint = document.createElement("div");
-    this.attachShadow({ mode: "open" }).appendChild(mountPoint);
+    this.appendChild(mountPoint);
     const root = ReactDOM.createRoot(mountPoint);
     root.render(
       <React.StrictMode>
