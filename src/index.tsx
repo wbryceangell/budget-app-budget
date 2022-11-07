@@ -1,12 +1,13 @@
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-class BudgetApp extends HTMLElement {
+class BudgetAppBudget extends HTMLElement {
   connectedCallback() {
     const mountPoint = document.createElement("div");
-    this.attachShadow({ mode: "open" }).appendChild(mountPoint);
+    // probably need to attach to shadow once root styles are figured out
+    this.appendChild(mountPoint);
     const root = ReactDOM.createRoot(mountPoint);
     root.render(<App />);
   }
 }
-customElements.define("budget-app", BudgetApp);
+customElements.define("budget-app-budget", BudgetAppBudget);

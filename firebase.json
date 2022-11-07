@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "something-else",
+    "site": "budget-app-budget",
     "public": "build/static/js",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }

@@ -107,7 +107,7 @@ module.exports = function (webpackEnv) {
   // common function to get style loaders
   const getStyleLoaders = (cssOptions, preProcessor) => {
     const loaders = [
-      isEnvDevelopment && require.resolve("style-loader"),
+      require.resolve("style-loader"),
       {
         loader: require.resolve("css-loader"),
         options: cssOptions,
